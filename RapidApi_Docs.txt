@@ -1,0 +1,200 @@
+SNIPS
+=====
+YAHOO FINANCE - API
+===================
+Scaffold-DbContext -Connection name=RecContext -Provider Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models\DataLayer -DataAnnotations -Force 
+-- URIS --
+-- STOCK MARKET INFO --
+- https://yahoo-finance127.p.rapidapi.com/price/eth-usd
+
+// Node.Js
+
+// const host_uri1 = "https://apidojo-yahoo-finance-v1.p.rapidapi.com/"
+// const host_uri2 = "https://yahoo-finance127.p.rapidapi.com/search/aa"
+
+// const r_apikey =  "c9e20b4a29msh0076235e6dcc54ep167c48jsn494f04de5a39"
+
+import axios from 'axios';
+
+const options = {
+  method: 'GET',
+  url: 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/auto-complete',
+  params: {
+    q: 'tesla',
+    region: 'US'
+  },
+  headers: {
+    'X-RapidAPI-Key': r_apikey,
+    'X-RapidAPI-Host': host_uri
+  }
+};
+try {
+	const response = await axios.request(options);
+	console.log(response.data);
+} catch (error) {
+	console.error(error);
+}
+
+-- EXAMPLE STOCKS: WATCHLIST --  
+-- COLUMN --
+Stocks:
+TMUS
+164.00  <chart-line>
++ 0.42  
+
+-- ROW -- 
+NASDAQ			<chart-line> 16,685.97
+ NASDAQ Composite    		       -12.33    
+
+-- Return Stock Price information --
+
+
+---------------------------------------------
+
+NEWSDATA.IO 
+===========
+api_key = "pub_2387657cea85e0e378bafaf3babbedc824713"
+
+article_organization
+time_since_post 
+article_coverimage
+article_title
+article_headline  
+article_description
+
+
+RAPID-API : API-FOOTBALL
+========================
+RAPID_API_KEY = c9e20b4a29msh0076235e6dcc54ep167c48jsn494f04de5a39
+
+data-host: (X-RAPIDAPI-HOST)
+	api-football-v1.p.rapidapi.com/v3
+	/v3/teams?id=33
+	v3/teams/seasons?team=33
+	v3/predictions?fixture=198772
+	v3/teams/countries
+	v3/teams/statistics?league=39&season=2020&team=33
+	v3/fixtures/lineups?fixture=215662
+	v3/fixtures/lineups?fixture=215662
+	v3/sidelined?player=276
+	v3/sidelined?coach=276
+	v3/players/topscorers?league=39&season=2020
+	v3/players/topassists?league=39&season=2020
+	v3/players/topredcards?league=39&season=2020
+	v3/players/topyellowcards?league=39&season=2020
+
+data-key: (X-RAPIDAPI-KEY) 
+"c9e20b4a29msh0076235e6dcc54ep167c48jsn494f04de5a39"
+
+
+-- (C#) REST_SHARP --
+var client = new RestClient("https://api-football-v1.p.rapidapi.com/v3/timezone");
+
+var request = new RestRequest(Method.GET);
+
+request.AddHeader("X-RapidAPI-Key", "c9e20b4a29msh0076235e6dcc54ep167c48jsn494f04de5a39");
+
+request.AddHeader("X-RapidAPI-Host", "api-football-v1.p.rapidapi.com");
+
+IRestResponse response = client.Execute(request);
+-----------------------------------------------------
+
+Flight Info API ( BASIC-$0 ) 
+============================
+
+Requests: 50 /month 
+Rate Limit: 10 / minute
+...
+
+
+
+-- NEWSAPI.ORG --
+==================
+80435561d7a041abaf4b38ff2487f4b6	
+
+npm install newsapi --save
+
+const NewsAPI = require('newsapi');
+const newsapi = new NewsAPI('80435561d7a041abaf4b38ff2487f4b6');
+
+newsapi.v2.topHeadlines({
+  sources: 'bbc-news,the-verge',
+  q: 'bitcoin',
+  category: 'business',
+  language: 'en',
+  country: 'us'
+}).then(response => {
+  console.log(response);
+  /*
+    {
+      status: "ok",
+      articles: [...]
+    }
+  */
+});
+
+-- Console C# --------------
+Install-Package NewsAPI
+
+using NewsAPI;
+using NewsAPI.Models;
+using NewsAPI.Constants;
+using System;
+	
+
+// init with your API key
+            var newsApiClient = new NewsApiClient("80435561d7a041abaf4b38ff2487f4b6");
+            var articlesResponse = newsApiClient.GetEverything(new EverythingRequest
+            {
+                Q = "Apple",
+                SortBy = SortBys.Popularity,
+                Language = Languages.EN,
+                From = new DateTime(2018, 1, 25)
+            });	
+
+if (articlesResponse.Status == Statuses.Ok)
+            {
+                // total results found
+                Console.WriteLine(articlesResponse.TotalResults);
+                // here's the first 20
+                foreach (var article in articlesResponse.Articles)
+                {
+                    // title
+                    Console.WriteLine(article.Title);
+                    // author
+                    Console.WriteLine(article.Author);
+                    // description
+                    Console.WriteLine(article.Description);
+                    // url
+                    Console.WriteLine(article.Url);
+                    // published at
+                    Console.WriteLine(article.PublishedAt);
+                }
+            }
+            Console.ReadLine();	
+
+-- PYTHON ----------
+from newsapi import NewsApiClient
+
+# Init
+newsapi = NewsApiClient(api_key='80435561d7a041abaf4b38ff2487f4b6')
+
+# /v2/top-headlines
+top_headlines = newsapi.get_top_headlines(q='bitcoin',
+                                          sources='bbc-news,the-verge',
+                                          category='business',
+                                          language='en',
+                                          country='us')
+
+# /v2/everything
+all_articles = newsapi.get_everything(q='bitcoin',
+                                      sources='bbc-news,the-verge',
+                                      domains='bbc.co.uk,techcrunch.com',
+                                      from_param='2017-12-01',
+                                      to='2017-12-12',
+                                      language='en',
+                                      sort_by='relevancy',
+                                      page=2)
+
+# /v2/top-headlines/sources
+sources = newsapi.get_sources()
