@@ -1,0 +1,191 @@
+{
+    "inbox": [
+        {
+            "id": 1,
+            "sender": "john.doe@example.com",
+            "subject": "Hello",
+            "message": "Hi there! How are you? heres that photo of my dog you wanted me to send you! Hope you like it!",
+            "2022-01-02T15:30:00Z": "2022-01-02T15:30:00Z"
+        },
+        {
+            "id": 2,
+            "sender": "jane.smith@example.com",
+            "subject": "Meeting Reminder",
+            "message": "Just a reminder that we have a meeting tomorrow at 10 AM.",
+            "2022-01-02T15:30:00Z": "2022-01-02T15:30:00Z"
+        },
+        {
+            "id": 3,
+            "sender": "alex.brown@example.com",
+            "subject": "Important Announcement",
+            "message": "Please be informed that the office will be closed on Friday.",
+            "timestamp": "2022-01-03T11:45:00Z"
+        },
+        {
+            "id": 4,
+            "sender": "alex.brown@example.com",
+            "subject": "Reminder: Report Due",
+            "message": "Just a reminder that your report is due by the end of the week.",
+            "timestamp": "2022-01-04T08:00:00Z"
+        }
+    ],
+    "sent": [
+        {
+            "id": 1,
+            "sender": "jack@mail.com",
+            "subject": "Reminder: Don't forget!",
+            "message": "Just a reminder to not forget about the meeting tomorrow.",
+            "timestamp": "2022-01-02T15:30:00Z",
+            "recipients": [
+                {
+                    "email": "JimJoh.com",
+                    "name": "Jim",
+                    "status": "unread",
+                    "timestamp": "2022-01-02T15:30:00Z",
+                    "iscontact": "true"
+                },
+                {
+                    "email": "AnnSmi.com",
+                    "name": "Ann",
+                    "status": "read",
+                    "timestamp": "2022-01-03T10:15:00Z",
+                    "iscontact": "false"
+                },
+                {
+                    "email": "TomBro.com",
+                    "name": "Tom",
+                    "status": "unread",
+                    "timestamp": "2022-01-04T09:00:00Z",
+                    "iscontact": "true"
+                },
+                {
+                    "email": "SueJoh.com",
+                    "name": "Sue",
+                    "status": "read",
+                    "timestamp": "2022-01-05T12:45:00Z",
+                    "iscontact": "false"
+                },
+                {
+                    "email": "RobWil.com",
+                    "name": "Rob",
+                    "status": "unread",
+                    "timestamp": "2022-01-06T08:30:00Z",
+                    "iscontact": "true"
+                },
+                {
+                    "email": "PatDav.com",
+                    "name": "Pat",
+                    "status": "read",
+                    "timestamp": "2022-01-07T14:20:00Z",
+                    "iscontact": "false"
+                },
+                {
+                    "email": "KimGar.com",
+                    "name": "Kim",
+                    "status": "unread",
+                    "timestamp": "2022-01-08T16:50:00Z",
+                    "iscontact": "true"
+                },
+                {
+                    "email": "MaxLee.com",
+                    "name": "Max",
+                    "status": "read",
+                    "timestamp": "2022-01-09T11:30:00Z",
+                    "iscontact": "false"
+                },
+                {
+                    "email": "EvaMar.com",
+                    "name": "Eva",
+                    "status": "unread",
+                    "timestamp": "2022-01-10T13:15:00Z",
+                    "iscontact": "true"
+                },
+                {
+                    "email": "BenHar.com",
+                    "name": "Ben",
+                    "status": "read",
+                    "timestamp": "2022-01-11T17:00:00Z",
+                    "iscontact": "false"
+                },
+                {
+                    "email": "JanLee.com",
+                    "name": "Jan",
+                    "status": "unread",
+                    "timestamp": "2022-01-12T07:45:00Z",
+                    "iscontact": "true"
+                },
+                {
+                    "email": "DanJoh.com",
+                    "name": "Dan",
+                    "status": "read",
+                    "timestamp": "2022-01-13T12:00:00Z",
+                    "iscontact": "false"
+                },
+                {
+                    "email": "AmyWat.com",
+                    "name": "Amy",
+                    "status": "unread",
+                    "timestamp": "2022-01-14T15:40:00Z",
+                    "iscontact": "true"
+                },
+                {
+                    "email": "RoyKim.com",
+                    "name": "Roy",
+                    "status": "read",
+                    "timestamp": "2022-01-15T09:20:00Z",
+                    "iscontact": "false"
+                },
+                {
+                    "email": "LizMor.com",
+                    "name": "Liz",
+                    "status": "unread",
+                    "timestamp": "2022-01-16T14:35:00Z",
+                    "iscontact": "true"
+                },
+                {
+                    "email": "KenSan.com",
+                    "name": "Ken",
+                    "status": "read",
+                    "timestamp": "2022-01-17T16:25:00Z",
+                    "iscontact": "false"
+                },
+                {
+                    "email": "JayGar.com",
+                    "name": "Jay",
+                    "status": "unread",
+                    "timestamp": "2022-01-18T13:50:00Z",
+                    "iscontact": "true"
+                },
+                {
+                    "email": "MiaTho.com",
+                    "name": "Mia",
+                    "status": "read",
+                    "timestamp": "2022-01-19T11:10:00Z",
+                    "iscontact": "false"
+                },
+                {
+                    "email": "LeoBro.com",
+                    "name": "Leo",
+                    "status": "unread",
+                    "timestamp": "2022-01-20T08:55:00Z",
+                    "iscontact": "true"
+                },
+                {
+                    "email": "SamDav.com",
+                    "name": "Sam",
+                    "status": "read",
+                    "timestamp": "2022-01-21T14:00:00Z",
+                    "iscontact": "false"
+                },
+                {
+                    "email": "NinaGar.com",
+                    "name": "Nina",
+                    "status": "unread",
+                    "timestamp": "2022-01-22T15:25:00Z",
+                    "iscontact": "true"
+                }
+            ]
+        }
+           
+    ]
+}
