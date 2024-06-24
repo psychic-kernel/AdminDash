@@ -1,0 +1,41 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 10%;
+}
+
+.navbar-toggler {
+    border: none;
+    
+}
+
+ul li {
+    position: relative;
+    display: flex;
+    margin-top: 2em;
+    
+    list-style-type: none;
+
+}
+
+ul li > a {
+    height: 2em;
+    border: 1px solid gray;
+    padding: 5px;
+    color: blue;
+}
+
+form input {
+    height: 1.5em
+}
+
+button {
+    height: 1.5em;
+}

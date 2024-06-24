@@ -1,0 +1,25 @@
+/* .offcanvas-body ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.3s;
+} */
+
+div.offcanvas{
+    margin-right: 20em;
+    background-color: transparent
+}
+
+main > a {
+    position: fixed;
+    bottom: 95%;
+    z-index: 2000;
+    margin-left: 2%;
+}
+
+main div.offcanvas-header {
+    margin-left: 10%;
+}

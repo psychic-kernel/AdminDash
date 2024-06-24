@@ -1,0 +1,17 @@
+/* Import index.css styles */
+@import url("../index.css");
+
+/* Add your custom styles here */
+.app {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .app {
+        padding: 10px;
+    }
+}
+
+/* Add more responsive styles as needed */

@@ -1,0 +1,71 @@
+[{
+    "team_id": 1,
+    "f_name": "Murdoch Sargant",
+    "l_name": "Sargant",
+    "email": "msargant0@qq.com",
+    "phone": "127-751-5871",
+    "is_assigned": 0
+  }, {
+    "team_id": 2,
+    "f_name": "Tommy Moncarr",
+    "l_name": "Moncarr",
+    "email": "tmoncarr1@unc.edu",
+    "phone": "272-423-3977",
+    "is_assigned": 0
+  }, {
+    "team_id": 3,
+    "f_name": "Gwenny Bleue",
+    "l_name": "Bleue",
+    "email": "gbleue2@netlog.com",
+    "phone": "230-469-9509",
+    "is_assigned": 1
+  }, {
+    "team_id": 4,
+    "f_name": "Florance Huntly",
+    "l_name": "Huntly",
+    "email": "fhuntly3@blogs.com",
+    "phone": "907-450-2751",
+    "is_assigned": 1
+  }, {
+    "team_id": 5,
+    "f_name": "Jerald Ulyat",
+    "l_name": "Ulyat",
+    "email": "julyat4@devhub.com",
+    "phone": "543-210-8891",
+    "is_assigned": 0
+  }, {
+    "team_id": 6,
+    "f_name": "Aurilia Bruck",
+    "l_name": "Bruck",
+    "email": "abruck5@hatena.ne.jp",
+    "phone": "933-552-3550",
+    "is_assigned": 0
+  }, {
+    "team_id": 7,
+    "f_name": "Celinka Sevitt",
+    "l_name": "Sevitt",
+    "email": "csevitt6@harvard.edu",
+    "phone": "984-146-7030",
+    "is_assigned": 0
+  }, {
+    "team_id": 8,
+    "f_name": "Syman Burrass",
+    "l_name": "Burrass",
+    "email": "sburrass7@reuters.com",
+    "phone": "984-999-3753",
+    "is_assigned": 0
+  }, {
+    "team_id": 9,
+    "f_name": "Kailey Kiln",
+    "l_name": "Kiln",
+    "email": "kkiln8@merriam-webster.com",
+    "phone": "240-304-2461",
+    "is_assigned": 1
+  }, {
+    "team_id": 10,
+    "f_name": "Kara-lynn Ruck",
+    "l_name": "Ruck",
+    "email": "kruck9@privacy.gov.au",
+    "phone": "117-815-4604",
+    "is_assigned": 1
+  }]
